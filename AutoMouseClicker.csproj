@@ -4,6 +4,16 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
+    <Copyright>Copyright 2022 Dmitry Brant</Copyright>
+    <PackageProjectUrl></PackageProjectUrl>
+    <RepositoryUrl>https://github.com/dbrant/AutoMouseClicker</RepositoryUrl>
+    <Description>For whenever you need the mouse to click programmatically, over and over, on a single spot. (Run as Administrator for correct behavior.)</Description>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <DefineConstants />
   </PropertyGroup>
 
 </Project>
