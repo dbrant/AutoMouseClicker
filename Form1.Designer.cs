@@ -35,7 +35,7 @@ namespace AutoMouseClicker
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rbRightButton = new System.Windows.Forms.RadioButton();
             this.rbLeftButton = new System.Windows.Forms.RadioButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtInterval = new System.Windows.Forms.TextBox();
             this.lblInterval = new System.Windows.Forms.Label();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.lblStatus = new System.Windows.Forms.ToolStripStatusLabel();
@@ -93,13 +93,13 @@ namespace AutoMouseClicker
             this.rbLeftButton.Text = "Left";
             this.rbLeftButton.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txtInterval
             // 
-            this.textBox1.Location = new System.Drawing.Point(94, 70);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(64, 23);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.Text = "2000";
+            this.txtInterval.Location = new System.Drawing.Point(94, 70);
+            this.txtInterval.Name = "txtInterval";
+            this.txtInterval.Size = new System.Drawing.Size(64, 23);
+            this.txtInterval.TabIndex = 2;
+            this.txtInterval.Text = "2000";
             // 
             // lblInterval
             // 
@@ -146,7 +146,7 @@ namespace AutoMouseClicker
             this.Controls.Add(this.chkPauseOnMotion);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.lblInterval);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtInterval);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnStartStop);
             this.Name = "Form1";
@@ -167,7 +167,7 @@ namespace AutoMouseClicker
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton rbRightButton;
         private System.Windows.Forms.RadioButton rbLeftButton;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtInterval;
         private System.Windows.Forms.Label lblInterval;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel lblStatus;

@@ -19,12 +19,21 @@ namespace AutoMouseClicker
 
         private void btnStartStop_Click(object sender, EventArgs e)
         {
-            if (!timer1.Enabled)
+            try
             {
-                prevX = Cursor.Position.X;
-                prevY = Cursor.Position.Y;
+                if (!timer1.Enabled)
+                {
+                    prevX = Cursor.Position.X;
+                    prevY = Cursor.Position.Y;
+
+                    timer1.Interval = int.Parse(txtInterval.Text);
+                }
+                timer1.Enabled = !timer1.Enabled;
             }
-            timer1.Enabled = !timer1.Enabled;
+            catch (Exception ex)
+            {
+                MessageBox.Show(this, ex.Message, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
             updateState();
         }
 
