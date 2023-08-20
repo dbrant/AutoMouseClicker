@@ -8,6 +8,7 @@
     <PackageProjectUrl></PackageProjectUrl>
     <RepositoryUrl>https://github.com/dbrant/AutoMouseClicker</RepositoryUrl>
     <Description>For whenever you need the mouse to click programmatically, over and over, on a single spot. (Run as Administrator for correct behavior.)</Description>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
